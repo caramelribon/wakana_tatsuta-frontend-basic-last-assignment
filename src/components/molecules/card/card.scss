@@ -1,7 +1,7 @@
 @use "../../variables" as *;
 
 .card {
-  width: 540px;
+  width: auto;
 
   .card-top {
     position: relative;
@@ -13,7 +13,7 @@
       left: 0px;
       font-size: $fontsize-l;
       font-weight: 700;
-      color: $black;
+      color: $orange_bistre;
       background-color: $white;
       width: 150px;
       height: 150px;
@@ -23,11 +23,14 @@
       z-index: 1;
     }
 
-    img:hover {
-      transform: scale(1.2);
+    img {
       transition: 0.5s ease;
-      @media (max-width: $breakpoint-md) {
-        transform: none;
+
+      &:hover {
+        transform: scale(1.2);
+        @media (max-width: $breakpoint-md) {
+          transform: none;
+        }
       }
     }
   }
