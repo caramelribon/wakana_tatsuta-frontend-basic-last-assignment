@@ -1,0 +1,92 @@
+@use "../../variables" as *;
+
+.plan {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: $breakpoint-md) {
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+
+  & > .plan-standard ul {
+    border: 5px solid $orange_bistre;
+
+    li:nth-child(1) {
+      height: 69px;
+      background-color: $orange_bistre;
+      margin: -4.5px 0px;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px 12px;
+
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 24px;
+    }
+
+    li:nth-child(1) {
+      height: 69px;
+      color: $white;
+      font-size: $fontsize-l;
+      font-weight: 700;
+      line-height: 29px;
+      background-color: $orange_zorba;
+      text-align: center;
+      padding: 20px 8px;
+    }
+
+    li:nth-child(2) {
+      height: 142px;
+      background-color: $gray_desertStorm;
+      text-align: center;
+      padding: 20px 8px;
+      border: 1px solid $gray_gainsboro;
+      margin: -1px 0px;
+
+      .plan-price {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        color: $orange_bistre;
+        font-weight: 700;
+        gap: 4px;
+        margin: 0px 0px 16px;
+
+        .plan-price-mark {
+          font-size: $fontsize-l;
+          line-height: 29px;
+          margin: 0px;
+        }
+
+        .plan-price-yen {
+          font-size: $fontsize-xxl;
+          line-height: 58px;
+          margin: 0px;
+        }
+      }
+
+      .text {
+        color: $black;
+        font-size: $fontsize-s;
+        margin: 0px;
+      }
+    }
+
+    li:nth-child(n + 3) {
+      height: auto;
+      background-color: $white;
+      text-align: center;
+      padding: 20px 10px;
+      margin: -1px 0px;
+      border: 1px solid $gray_gainsboro;
+      word-wrap: break-word;
+    }
+  }
+}
