@@ -11,13 +11,21 @@
     margin-bottom: 24px;
   }
 
-  & > .plan-standard ul {
-    border: 5px solid $orange_bistre;
+  & > .plan-daytime {
+    width: 100%;
+  }
 
-    li:nth-child(1) {
-      height: 69px;
-      background-color: $orange_bistre;
-      margin: -4.5px 0px;
+  & > .plan-standard {
+    width: 100%;
+
+    ul {
+      border: 5px solid $orange_bistre;
+
+      li:nth-child(1) {
+        height: 69px;
+        background-color: $orange_bistre;
+        margin: -4.5px 0px;
+      }
     }
   }
 
