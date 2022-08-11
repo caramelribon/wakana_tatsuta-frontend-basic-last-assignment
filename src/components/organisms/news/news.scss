@@ -30,7 +30,8 @@
           padding: 19px 25px 19px 19px;
 
           & > h3 {
-            width: 460px;
+            width: 100%;
+            max-width: 460px;
             color: $black;
             font-size: $fontsize-m;
             line-height: 23px;
