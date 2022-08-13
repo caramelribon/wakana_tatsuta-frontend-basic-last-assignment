@@ -22,9 +22,9 @@
       border: 5px solid $orange_bistre;
 
       li:nth-child(1) {
-        height: 69px;
+        height: 59px;
         background-color: $orange_bistre;
-        margin: -4.5px 0px;
+        padding: 15px 8px;
       }
     }
   }
@@ -38,6 +38,13 @@
       margin-bottom: 24px;
     }
 
+    li {
+      padding: 20px 8px;
+      text-align: center;
+      margin: -1px 0px;
+      border: 1px solid $gray_gainsboro;
+    }
+
     li:nth-child(1) {
       height: 69px;
       color: $white;
@@ -45,17 +52,13 @@
       font-weight: 700;
       line-height: 29px;
       background-color: $orange_zorba;
-      text-align: center;
-      padding: 20px 8px;
+      margin: 0px;
+      border: none;
     }
 
     li:nth-child(2) {
       height: 142px;
       background-color: $gray_desertStorm;
-      text-align: center;
-      padding: 20px 8px;
-      border: 1px solid $gray_gainsboro;
-      margin: -1px 0px;
 
       .plan-price {
         display: flex;
@@ -70,12 +73,15 @@
         .plan-price-mark {
           font-size: $fontsize-l;
           line-height: 29px;
-          margin: 0px;
         }
 
         .plan-price-yen {
           font-size: $fontsize-xxl;
           line-height: 58px;
+        }
+
+        .plan-price-mark,
+        .plan-price-yen {
           margin: 0px;
         }
       }
@@ -90,11 +96,8 @@
     li:nth-child(n + 3) {
       height: auto;
       background-color: $white;
-      text-align: center;
       padding: 20px 10px;
-      margin: -1px 0px;
-      border: 1px solid $gray_gainsboro;
-      word-wrap: break-word;
+      overflow-wrap: break-word;
     }
   }
 }
