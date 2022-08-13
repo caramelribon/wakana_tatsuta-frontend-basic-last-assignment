@@ -6,6 +6,12 @@
   align-items: stretch;
   margin-bottom: 35px;
 
+  .news-and-events-title {
+    h2 {
+      font-weight: 400;
+    }
+  }
+
   .news-list {
     display: flex;
     flex-direction: column;
@@ -15,12 +21,11 @@
     .news-card {
       & > a {
         height: 85px;
-        display: flex;
+        display: block;
         text-decoration: none;
         transition: 0.2s ease;
 
         .news-caption {
-          width: 100%;
           background-color: $white;
           border: 1px solid $gray_gainsboro;
           display: flex;
@@ -34,6 +39,7 @@
             max-width: 460px;
             color: $black;
             font-size: $fontsize-m;
+            font-weight: 400;
             line-height: 23px;
             overflow: hidden;
             white-space: nowrap;
