@@ -1,9 +1,6 @@
 @use "../../variables" as *;
 
 footer {
-  width: 100%;
-  height: auto;
-
   .footer-contact {
     padding: 52px 20px;
     box-sizing: border-box;
@@ -58,14 +55,10 @@ footer {
   }
 
   .footer-nav {
-    height: 52px;
+    height: auto;
     background-color: $white_smoke;
     padding: 16px;
     border-bottom: 1px solid $gray_nobel;
-
-    @media (max-width: $breakpoint-md) {
-      height: 136px;
-    }
 
     .footer-nav-list {
       display: flex;
@@ -87,8 +80,7 @@ footer {
           padding: 0px;
         }
 
-        &:nth-child(-n + 7) {
-          margin-right: -0.5px;
+        &:not(:last-child) {
           border-right: 1px solid $black;
 
           @media (max-width: $breakpoint-md) {
