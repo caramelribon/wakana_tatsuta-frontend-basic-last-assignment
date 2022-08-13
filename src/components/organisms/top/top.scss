@@ -46,7 +46,6 @@
     background-color: $black;
 
     .message {
-      @extend .message;
       max-width: 960px;
       margin: 0 auto;
 
@@ -55,11 +54,9 @@
       }
 
       .title {
-        @extend .title;
         color: $white;
       }
       .text {
-        @extend .text;
         color: $white;
       }
     }
