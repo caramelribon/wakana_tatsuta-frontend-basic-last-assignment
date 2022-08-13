@@ -1,0 +1,122 @@
+@use "../../variables" as *;
+
+footer {
+  .footer-contact {
+    padding: 52px 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid $gray_nobel;
+
+    @media (max-width: $breakpoint-md) {
+      padding: 32px 20px;
+    }
+
+    img {
+      display: block;
+      margin: 0px auto 20px;
+    }
+
+    .footer-contact-address {
+      font-size: $fontsize-s;
+      line-height: 28px;
+      text-align: center;
+      word-wrap: break-word;
+      margin-bottom: 20px;
+    }
+
+    .footer-contact-icon {
+      width: 98px;
+      height: 14px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      gap: 14px;
+      margin: 0px auto;
+
+      .footer-contact-icon-item {
+        display: block;
+        height: 14px;
+        margin: 0px;
+
+        a {
+          color: $black;
+          font-size: $fontsize-s;
+          text-decoration: none;
+          transition: 0.2s ease;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &:hover {
+            color: $gray_nobel;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-nav {
+    height: auto;
+    background-color: $white_smoke;
+    padding: 16px;
+    border-bottom: 1px solid $gray_nobel;
+
+    .footer-nav-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @media (max-width: $breakpoint-md) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 8px;
+      }
+
+      .footer-nav-list-item {
+        height: 20px;
+        padding: 0px 8px;
+
+        @media (max-width: $breakpoint-md) {
+          padding: 0px;
+        }
+
+        &:not(:last-child) {
+          border-right: 1px solid $black;
+
+          @media (max-width: $breakpoint-md) {
+            margin-right: 0px;
+            border-right: 0px;
+          }
+        }
+
+        a {
+          display: flex;
+          align-items: center;
+          color: $black;
+          font-size: $fontsize-s;
+          line-height: 20px;
+          text-decoration: none;
+          transition: 0.2s ease;
+
+          &:hover {
+            color: $orange_bistre;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-copyright {
+    background-color: $black;
+    padding: 16px;
+
+    .footer-copyright-text {
+      color: $white;
+      font-size: $fontsize-xs;
+      line-height: 12px;
+      text-align: center;
+      word-wrap: break-word;
+      margin: 0px;
+    }
+  }
+}
