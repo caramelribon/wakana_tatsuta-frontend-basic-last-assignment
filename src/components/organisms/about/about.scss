@@ -11,31 +11,13 @@
     margin-bottom: 100px;
   }
 
-  .about-img {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-
-    @media (max-width: $breakpoint-lg) {
-      grid-template-columns: 1fr 1fr;
-    }
-
-    .about-img-item {
-      object-fit: cover;
-      width: 100%;
-    }
-  }
-
   .message {
-    @extend .message;
     margin: 0 auto;
 
     .title {
-      @extend .title;
       color: $orange_bistre;
     }
     .text {
-      @extend .text;
       color: $black;
     }
   }
