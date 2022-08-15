@@ -1,0 +1,119 @@
+@use "../../variables" as *;
+
+header {
+  height: 90px;
+
+  @media (max-width: $breakpoint-xl) {
+    height: 60px;
+  }
+
+  .navbar {
+    background-color: $black_50;
+    padding: 0px 30px;
+
+    @media (max-width: $breakpoint-xl) {
+      background-color: $black;
+      padding: 0px 16px;
+    }
+
+    .container-fluid {
+      .navbar-brand {
+        & > img {
+          width: 140px;
+
+          @media (max-width: $breakpoint-xl) {
+            width: 120px;
+          }
+        }
+      }
+
+      .navbar-toggler {
+        padding: 20.5px 0px;
+        outline: none;
+
+        .navbar-toggler-icon {
+          background-image: url(../../../img/humberger-bar.svg);
+          width: 15px;
+          height: 19px;
+        }
+      }
+
+      .nav-item {
+        & > a,
+        button {
+          width: 100%;
+          color: $white;
+          font-size: $fontsize-s;
+          line-height: 20px;
+          padding: 35px 20px;
+          transition: 0.2s ease;
+
+          @media (max-width: $breakpoint-xl) {
+            padding: 15px 0px;
+          }
+
+          &:hover {
+            color: $gray_nobel;
+          }
+        }
+
+        .dropdown-lg {
+          &[aria-expanded="false"] {
+            .icon-minus {
+              display: none;
+            }
+          }
+
+          &[aria-expanded="true"] {
+            .icon-plus {
+              display: none;
+            }
+          }
+        }
+
+        &:hover {
+          .dropdown-menu {
+            @media (min-width: $breakpoint-xl) {
+              top: 90px;
+              display: block;
+            }
+          }
+        }
+
+        & > ul {
+          width: 220px;
+          background-color: $black;
+          padding: 0px;
+
+          @media (max-width: $breakpoint-xl) {
+            width: 100%;
+          }
+
+          & > li {
+            height: 56px;
+
+            @media (max-width: $breakpoint-xl) {
+              height: 50px;
+            }
+
+            .dropdown-item {
+              color: $white;
+              font-size: $fontsize-s;
+              line-height: 20px;
+              padding: 18px;
+              transition: 0.2s ease;
+
+              @media (max-width: $breakpoint-xl) {
+                padding: 15px 12px;
+              }
+
+              &:hover {
+                background-color: $orange_bistre;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
