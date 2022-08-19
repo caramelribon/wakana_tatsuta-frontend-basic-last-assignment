@@ -1,0 +1,21 @@
+@use "../../variables" as *;
+
+.plans {
+  .message {
+    padding-top: 0px;
+
+    .title {
+      color: $orange_bistre;
+    }
+  }
+  .plan {
+    margin-bottom: 40px;
+
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 0px;
+    }
+  }
+  .atoms-button {
+    margin: 0px auto;
+  }
+}
