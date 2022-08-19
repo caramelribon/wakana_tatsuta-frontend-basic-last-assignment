@@ -1,0 +1,17 @@
+@use "../../variables" as *;
+
+@media (min-width: $breakpoint-lg) {
+  .news-and-events {
+    max-width: 960px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0px;
+    margin: 56px auto;
+
+    .events,
+    .news {
+      max-width: 460px;
+    }
+  }
+}
