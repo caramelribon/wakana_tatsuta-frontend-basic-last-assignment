@@ -21,16 +21,10 @@
     }
 
     .card-body {
-      padding: 32px 35px;
-
-      .atoms-button {
-        margin-top: auto;
-      }
-      .card-text {
-        @media (max-width: $breakpoint-md) {
-          max-width: 448px;
-        }
-      }
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
     }
   }
 }
