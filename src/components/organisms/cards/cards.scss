@@ -1,0 +1,30 @@
+@use "../../variables" as *;
+
+.cards {
+  max-width: 960px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 24px;
+  margin: 0 auto;
+
+  @media (max-width: $breakpoint-md) {
+    max-width: 540px;
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+  .card {
+    padding: 0px 0px 100px;
+
+    @media (max-width: $breakpoint-md) {
+      padding: 0px 0px 40px;
+    }
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
