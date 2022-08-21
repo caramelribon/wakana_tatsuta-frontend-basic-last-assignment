@@ -54,10 +54,6 @@ header {
 
           &:hover {
             color: $gray_nobel;
-
-            @media (max-width: $breakpoint-xl) {
-              color: $white;
-            }
           }
         }
 
@@ -113,6 +109,10 @@ header {
 
               &:hover {
                 background-color: $orange_bistre;
+
+                @media (max-width: $breakpoint-xl) {
+                  background-color: $black;
+                }
               }
             }
           }
