@@ -16,11 +16,10 @@
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    margin-bottom: 14px;
+    margin-bottom: 30px;
 
     .news-card {
       & > a {
-        height: 85px;
         display: block;
         text-decoration: none;
         transition: 0.2s ease;
@@ -62,6 +61,10 @@
 
       &:not(:first-child) > a .news-caption {
         border-top: none;
+      }
+
+      &:first-child > a .news-caption {
+        padding: 18.5px 25px 18.5px 19px;
       }
     }
   }
