@@ -54,6 +54,10 @@ header {
 
           &:hover {
             color: $gray_nobel;
+
+            @media (max-width: $breakpoint-xl) {
+              color: $white;
+            }
           }
         }
 
