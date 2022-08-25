@@ -1,19 +1,23 @@
 @use "../../variables" as *;
 
 .news-and-events {
-  padding: 56px 0px;
+  background-color: $white_smoke;
+  margin: 0px;
 
-  @media (min-width: $breakpoint-lg) {
-    max-width: 960px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 0px;
+  .container {
+    padding: 56px 0px;
     margin: 0px auto;
 
-    .events,
-    .news {
-      max-width: 460px;
+    @media (min-width: $breakpoint-lg) {
+      max-width: 960px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .events,
+      .news {
+        max-width: 460px;
+      }
     }
   }
 }
