@@ -2,6 +2,7 @@
 
 header {
   height: 90px;
+  position: relative;
 
   @media (max-width: $breakpoint-xl) {
     height: 60px;
@@ -39,6 +40,10 @@ header {
       }
 
       .nav-item {
+        .nav-link.show {
+          color: $white;
+        }
+
         & > a,
         button {
           width: 100%;
@@ -75,47 +80,59 @@ header {
           }
         }
 
+        .collapse {
+          @media (min-width: $breakpoint-xl) {
+            display: none;
+          }
+        }
+
         &:hover {
-          .dropdown-menu {
+          .collapse {
             @media (min-width: $breakpoint-xl) {
               top: 90px;
               display: block;
+              ul {
+                position: absolute;
+              }
             }
           }
         }
 
-        & > ul {
-          width: 220px;
-          background-color: $black;
-          padding: 0px;
-
-          @media (max-width: $breakpoint-xl) {
-            width: 100%;
-          }
-
-          & > li {
-            height: 56px;
+        & > div {
+          & > ul {
+            width: 220px;
+            background-color: $black;
+            padding: 0px;
+            list-style: none;
 
             @media (max-width: $breakpoint-xl) {
-              height: 50px;
+              width: 100%;
             }
 
-            .dropdown-item {
-              color: $white;
-              font-size: $fontsize-s;
-              line-height: 20px;
-              padding: 18px;
-              transition: 0.2s ease;
+            & > li {
+              height: 56px;
 
               @media (max-width: $breakpoint-xl) {
-                padding: 15px 12px;
+                height: 50px;
               }
 
-              &:hover {
-                background-color: $orange_bistre;
+              .dropdown-item {
+                color: $white;
+                font-size: $fontsize-s;
+                line-height: 20px;
+                padding: 18px;
+                transition: 0.2s ease;
 
                 @media (max-width: $breakpoint-xl) {
-                  background-color: $black;
+                  padding: 15px 12px;
+                }
+
+                &:hover {
+                  background-color: $orange_bistre;
+
+                  @media (max-width: $breakpoint-xl) {
+                    background-color: $black;
+                  }
                 }
               }
             }
