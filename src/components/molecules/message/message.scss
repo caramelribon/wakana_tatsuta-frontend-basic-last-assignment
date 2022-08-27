@@ -1,11 +1,7 @@
 @use "../../variables" as *;
 
 .message {
-  padding: 52px 20px;
-
-  @media (max-width: $breakpoint-lg) {
-    padding: 32px 20px;
-  }
+  padding: 32px 20px;
 
   .title {
     color: $black;
