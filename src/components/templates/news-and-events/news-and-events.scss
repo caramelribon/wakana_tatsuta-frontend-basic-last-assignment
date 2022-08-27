@@ -2,6 +2,11 @@
 
 .news-and-events {
   background-color: $white_smoke;
+  margin-bottom: 100px;
+
+  @media (max-width: $breakpoint-md) {
+    margin-bottom: 40px;
+  }
 
   .container {
     padding: 56px 16px;

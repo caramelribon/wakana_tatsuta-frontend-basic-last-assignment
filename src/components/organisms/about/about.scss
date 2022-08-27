@@ -3,12 +3,12 @@
 .about {
   max-width: 960px;
   padding: 0px;
-  margin: 0px auto 30px;
+  margin: 0px auto 100px;
   background-color: $white_smoke;
 
-  @media (max-width: $breakpoint-lg) {
+  @media (max-width: $breakpoint-md) {
     max-width: 720px;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
   }
 
   .message {
