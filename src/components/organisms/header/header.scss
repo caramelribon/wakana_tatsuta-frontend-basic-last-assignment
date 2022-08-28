@@ -2,7 +2,9 @@
 
 header {
   height: 90px;
-  position: relative;
+  width: 100%;
+  position: absolute;
+  top: 0px;
   z-index: 1;
 
   @media (max-width: $breakpoint-xl) {
