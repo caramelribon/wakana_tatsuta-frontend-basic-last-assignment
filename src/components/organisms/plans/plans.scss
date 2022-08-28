@@ -15,10 +15,12 @@
     }
   }
   .plan {
-    margin-bottom: 40px;
+    max-width: 960px;
+    margin: 0px auto 40px auto;
 
     @media (max-width: $breakpoint-md) {
-      margin-bottom: 0px;
+      max-width: 540px;
+      margin-bottom: 0px auto;
     }
   }
   .atoms-button {
