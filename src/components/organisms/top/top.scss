@@ -3,6 +3,7 @@
 .top {
   padding: 0px;
   margin-bottom: 100px;
+  position: relative;
 
   @media (max-width: $breakpoint-lg) {
     margin-bottom: 40px;
